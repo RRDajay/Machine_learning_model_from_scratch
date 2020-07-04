@@ -31,8 +31,8 @@ class LinearRegressor():
         
 def mse(y_pred, y):
     return np.mean((y-y_pred)**2)
-       
-x, y = datasets.make_regression(n_samples=1000, n_features=1)
+
+x, y = datasets.make_regression(n_samples=100, n_features=1)
 LR = LinearRegressor()
 LR.train(x, y)
 
